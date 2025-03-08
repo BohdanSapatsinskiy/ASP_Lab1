@@ -1,0 +1,35 @@
+﻿@model dynamic
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Інформація про лабораторну роботу</h1>
+    <table>
+        <tr>
+            <th>Номер лабораторної роботи</th>
+            <td>@Model.LabNumber</td>
+        </tr>
+        <tr>
+            <th>Тема</th>
+            <td>@Model.Theme</td>
+        </tr>
+        <tr>
+            <th>Мета</th>
+            <td>@Model.Goal</td>
+        </tr>
+        <tr>
+            <th>Ім'я виконавця</th>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <th>Прізвище виконавця</th>
+            <td>@Model.Surname</td>
+        </tr>
+    </table>
+</body>
+</html>
